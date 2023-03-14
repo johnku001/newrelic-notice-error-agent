@@ -47,3 +47,6 @@ error-agent "<error_message>"
 `function_name` is the function name of your application function.
 
 `error_message` is the error message you would like to send to new relic. 
+
+# Docker Hub image
+[Docker Hub](https://hub.docker.com/repository/docker/johnku001/newrelic-notice-error-agent/general)
