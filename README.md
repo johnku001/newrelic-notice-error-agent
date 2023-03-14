@@ -1,6 +1,6 @@
 # New Relic Notice Error Agent
 This is a docker image used to notice errors to new relic in the argo workflow
-
+<br />
 # Getting Started
 First test your new relic account connection. Make a `.env` file with the `.env.example` and filling in the variables.
 
@@ -13,7 +13,7 @@ First test your new relic account connection. Make a `.env` file with the `.env.
 
 <br />
 
-Next, install the package and test the connect
+Next, install the package and test the connect.
 
 ```
 // Install the package
@@ -23,21 +23,22 @@ npm install
 node error-agent.js "<error_message>"
 ```
 <br />
-Then, build the docker image
+Then, build the docker image.
 
 ```
 docker build -t error-agent .
 ```
 <br />
-Finally, run the image with required env variables and arguments 
+Finally, run the image with required env variables and arguments.
 
-````
+```
 docker run --rm -it \
 -e NEWRELIC_APP_NAME="<newrelic_apps_name>" \
 -e NEWRELIC_LICENSE_KEY="<newrelic_license_key>" \
 -e FUNCTION_NAME="<function_name>" \
 error-agent "<error_message>"
-````
+```
+<br />
 
 `newrelic_apps_name` is the the application name used in new relic. You can use it to search the error message of your application.
 
