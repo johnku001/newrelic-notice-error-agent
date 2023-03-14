@@ -49,4 +49,4 @@ error-agent "<error_message>"
 `error_message` is the error message you would like to send to new relic. 
 
 # Docker Hub image
-[Docker Hub](https://hub.docker.com/repository/docker/johnku001/newrelic-notice-error-agent/general)
+[Docker Hub :whale: ](https://hub.docker.com/repository/docker/johnku001/newrelic-notice-error-agent/general)
