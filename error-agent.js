@@ -52,11 +52,7 @@ if (argumentsMap.message === undefined) {
 newrelic.startWebTransaction(process.env.FUNCTION_NAME.toString(), async () => {
   newrelic.noticeError(process.argv[2]);
 });
-<<<<<<< Updated upstream
-return true;
-=======
 
 console.log('Error message sent to New Relic: \n', argumentsMap);
 console.log(`\n`);
 console.log(`\n`);
->>>>>>> Stashed changes
