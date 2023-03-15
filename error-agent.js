@@ -50,7 +50,9 @@ if (argumentsMap.message === undefined) {
 }
 
 newrelic.startWebTransaction(process.env.FUNCTION_NAME.toString(), async () => {
-  newrelic.noticeError(process.argv[2]);
+  newrelic.noticeError(argumentsMap.message, flat({ ...argumentsMap }), {
+    delimiter: '.',
+  });
 });
 
 console.log('Error message sent to New Relic: \n', argumentsMap);
