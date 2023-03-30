@@ -22,7 +22,7 @@ Next, install the package and test the connect.
 npm install
 
 // Test the connect
-node error-agent.js message="<error_message>"
+node error-agent.js error="<error_message>"
 ```
 
 <br />
@@ -39,7 +39,7 @@ docker run --rm -it \
 -e NEWRELIC_APP_NAME="<newrelic_apps_name>" \
 -e NEWRELIC_LICENSE_KEY="<newrelic_license_key>" \
 -e FUNCTION_NAME="<function_name>" \
-error-agent message="message=<error_message>" \  
+error-agent error="<error_message>" \  
 <variable_name>=<variable_value>...
 ```
 <br />
@@ -66,7 +66,7 @@ docker run --rm -it \
 -e NEWRELIC_LICENSE_KEY="XXXXXXXXXXXXXXXXXXXXX" \
 -e FUNCTION_NAME="TestFunction" \
 error-agent \
-message="message=This is a test error" \  
+error="This is a test error" \  
 test_variable="test_test"
 ```
 # Docker Hub
