@@ -66,7 +66,7 @@ docker run --rm -it \
 -e NEWRELIC_LICENSE_KEY="XXXXXXXXXXXXXXXXXXXXX" \
 -e FUNCTION_NAME="TestFunction" \
 error-agent \
-error="message=This is a test error" \  
+error="This is a test error" \  
 test_variable="test_test"
 ```
 # Docker Hub
