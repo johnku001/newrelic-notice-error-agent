@@ -4,7 +4,7 @@
   "description": "This is a docker image for notice error message to new relic webhook in workflow",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "yarn jest"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,7 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "flat": "^5.0.2",
+    "log4js": "^6.9.1",
     "newrelic": "^9.11.0"
   }
 }
